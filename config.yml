@@ -1,0 +1,16 @@
+# UPDATE THIS FILE WITH YOUR CUSTOM VALUES
+
+# Change port mapping only if you need to. Usually port mapping should be fine.
+# It's usually easier to shutdown service on your host machine than changing ports.
+port_mapping:
+    - "80:80"       # http
+    - "5432:5432"   # postgresql
+
+# Used to set up your git config and to add ssh key in ssh-agent.
+git:
+    username: 'john.snow'
+    email:    'john.snow@example.com'     # john.snow@example.com
+    ssh_key:  '~/.ssh/id_rsa'        # Usually ~/.ssh/id_rsa
+
+# This image name will be used as docker container
+image: 'my_dev_container'
